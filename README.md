@@ -123,3 +123,101 @@ public class dni {
 	}
 }
 ```
+
+# Herencia
+## Empleado
+```java
+public class Empleado {
+	private String nombre;
+
+	public Empleado() {
+		super();
+	}
+
+	public Empleado(String nombre) {
+		super();
+		this.nombre = nombre;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	@Override
+	public String toString() {
+		return "Empleado " + nombre;
+	}
+}
+```
+## Directivo
+```java 
+public class Directivo extends Empleado{
+	public Directivo(String nombre) {
+		// TODO Auto-generated constructor stub
+		super(nombre);
+	}
+	@Override
+	public String toString() {
+		return super.toString()+" -> Directivo";
+	}
+}
+```
+## Operario
+```java
+public class Operario extends Empleado{
+	public Operario(String nombre){
+		super(nombre);
+	}
+	@Override
+	public String toString() {
+		return super.toString()+" -> Operario";
+	}
+}
+```
+## Tecnico
+```java
+public class Tecnico extends Operario{
+	public Tecnico(String nombre) {
+		super(nombre);
+	}
+	@Override
+	public String toString() {
+		return super.toString()+" -> Tecnico";
+	}
+}
+```
+## Oficial
+```java
+public class Oficial extends Operario{
+	public Oficial(String nombre) {
+		// TODO Auto-generated constructor stub
+		super(nombre);
+	}
+
+	@Override
+	public String toString() {
+		return super.toString()+" -> Oficial";
+	}
+}
+```
+##MAIN
+```java
+public class MainHerencia {
+	public static void main(String[] args) {
+		Empleado E1 = new Empleado("Rafa");
+		Directivo D1 = new Directivo("Mario");
+		Operario OP1 = new Operario("Alfonso");
+		Oficial OF1 = new Oficial("Luis");
+		Tecnico T1 = new Tecnico("Pablo");
+		System.out.println(E1);
+		System.out.println(D1);
+		System.out.println(OP1);
+		System.out.println(OF1);
+		System.out.println(T1);
+	}
+}
+```
