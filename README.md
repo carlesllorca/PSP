@@ -65,6 +65,8 @@ En este ejercicio vamos a ver como se utiliza la herencia en java. La erencia en
 
 ![alt text](https://i.imgur.com/d9JW3oe.png "Herencia")
 
+
+La clase empleado es la clase padre, contiene una variable nombre de tipo String que las clases hijas como Directivo, Operario y Tecnico contienen como variable.
 ## Empleado
 ```java
 public class Empleado {
@@ -93,6 +95,7 @@ public class Empleado {
 	}
 }
 ```
+La siguiente clase se llama Directivo, esta clase extiende de Empleado y tendra las variables que tiene Empleado mas las variables de Directivo pero que este caso no tiene.
 ## Directivo
 ```java 
 public class Directivo extends Empleado{
@@ -106,6 +109,9 @@ public class Directivo extends Empleado{
 	}
 }
 ```
+
+La siguiente clase se llama Operario, esta clase extiende de Empleado y tendra las variables que tiene Empleado mas las variables de Operario pero que este caso no tiene.
+
 ## Operario
 ```java
 public class Operario extends Empleado{
@@ -118,6 +124,9 @@ public class Operario extends Empleado{
 	}
 }
 ```
+
+La siguiente clase se llama Tecnico, esta clase extiende de Operario y tendra las variables que tiene Empleado mas Operario mas las variables de Directivo pero que este caso no tiene.
+
 ## Tecnico
 ```java
 public class Tecnico extends Operario{
@@ -130,6 +139,9 @@ public class Tecnico extends Operario{
 	}
 }
 ```
+
+La siguiente clase se llama Oficial, esta clase extiende de Operario y tendra las variables que tiene Empleado mas Operario mas las variables de Oficial pero que este caso no tiene.
+
 ## Oficial
 ```java
 public class Oficial extends Operario{
@@ -144,6 +156,9 @@ public class Oficial extends Operario{
 	}
 }
 ```
+
+La siguiente clase es la clase Main donde se ejecuta el código, creandose 1 Empleado, 1 Directivo, 1 Operario, 1 Oficial y 1 Tecnico, despues cuando se imprimen dice que tipo es.
+
 ##MAIN
 ```java
 public class MainHerencia {
@@ -161,3 +176,5 @@ public class MainHerencia {
 	}
 }
 ```
+
+
