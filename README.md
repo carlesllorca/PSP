@@ -63,7 +63,7 @@ Para dar los datos de los atributos podemos ir uno a uno con los setters de cada
 # Herencia
 En este ejercicio vamos a ver como se utiliza la herencia en java. La erencia en Java se utiliza para definir clases padres e hijo, es decir, una estructura en la que un clase hijo tiene los valores del padre. La estructrura que vamos a seguir es la siguiente:
 
-![alt text](https://imgur.com/gallery/iqGwfFO "Herencia")
+![alt text](https://i.imgur.com/d9JW3oe.png "Herencia")
 
 ## Empleado
 ```java
