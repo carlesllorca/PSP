@@ -59,9 +59,24 @@ Los atributos delante como podemos ver llevan siempre un indicador(String-> conj
 
 Para dar los datos de los atributos podemos ir uno a uno con los setters de cada atributo pero hay una forma que se utiliza que se pondran automaticamente. Ahi es cuando aparecen lo que hemos definido como (public Persona(){}), este que tenemos aquí crearia una persona sin ninguna información, lo que deberemos hacer es pasarle los datos dentro del parentesis y después indicar donde van puesto cada valor. El this.atributo se utiliza para definir que es el atributo del objeto porque si solo pusiesemos el nombre del atributo iria al valor mas cerca y entre parentesis podemos poner el mismo nombre.
 
+# Sobrecarrega de métodos
+Un método se hace para poder hacer una acción llamandolo. 
+
+La sobrecarga de métodos es la creación de varios métodos con el mismo nombre pero con diferente lista de tipos de parámetros. Java utiliza el número y tipo de parámetros para seleccionar cuál definición de método ejecutar. Java diferencia los métodos sobrecargados con base en el número y tipo de parámetros o argumentos que tiene el método y no por el tipo que devuelve. 
+#### Ejemplo
+```java
+int suma(int x, int y, int z){
+    return x+y+z;
+}
+int suma(double x, double y, double z){
+    return x+y+z;
+}
+```
+Como podemos ver en el código cuando llamamos al método, si le pasamos valores que sean enteros primero realizará el primero, si le pasamos con decimales realizará el segundo método.
+
 
 # Herencia
-En este ejercicio vamos a ver como se utiliza la herencia en java. La erencia en Java se utiliza para definir clases padres e hijo, es decir, una estructura en la que un clase hijo tiene los valores del padre. La estructrura que vamos a seguir es la siguiente:
+En este ejercicio vamos a ver como se utiliza la herencia en java. La herencia en Java se utiliza para definir clases padres e hijo, es decir, una estructura en la que un clase hijo tiene los valores del padre. La estructrura que vamos a seguir es la siguiente:
 
 ![alt text](https://i.imgur.com/d9JW3oe.png "Herencia")
 
@@ -176,5 +191,3 @@ public class MainHerencia {
 	}
 }
 ```
-
-
